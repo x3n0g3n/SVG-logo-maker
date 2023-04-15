@@ -1,0 +1,18 @@
+{
+  "name": "svg-logo-maker",
+  "version": "1.0.0",
+  "description": "A quick way to crate a logo",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "svg-logo-maker"
+  },
+  "author": "adrena Lewis",
+  "license": "ISC"
+}
