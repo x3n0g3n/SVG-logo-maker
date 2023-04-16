@@ -7,12 +7,19 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "svg-logo-maker"
   },
   "author": "adrena Lewis",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "is-css3-color": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
 }
