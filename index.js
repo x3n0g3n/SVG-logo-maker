@@ -11,12 +11,12 @@ inquirer
     },
     {
       type: 'input',
-      name: 'textColor',
+      name: 'textColour',
       message: `Please enter text color keyword or a hexadecimal number.`,
     },
     {
       type: 'input',
-      name: 'logoColor',
+      name: 'logoColour',
       message: `Please enter a color keyword or a hexadecimal number for the logo's background.`,
     },
     {
@@ -30,4 +30,28 @@ inquirer
     console.log(response)
     const myshape= makeShape(response)
     console.log(myshape)
+
+    const svgText = myshape.render()
+
+    //additional HTML text. See example svg files
+
+    //fs.writefile with the svgText as the data
 })      
+// const fs = require('fs');
+
+// function writeLogoToFile(logoData, filename) {
+//   // Convert the logoData to a string
+//   const logoString = JSON.stringify(logoData);
+
+//   // Write the logo string to a file
+//   fs.writeFile(filename, logoString, (err) => {
+//     if (err) {
+//       console.error('Error writing file:', err);
+//     } else {
+//       console.log('Logo data saved to file:', filename);
+//     }
+//   });
+// }
+
+// const filename = 'logo.json';
+// writeLogoToFile(logoData, filename);
