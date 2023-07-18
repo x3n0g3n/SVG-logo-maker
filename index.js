@@ -11,12 +11,12 @@ inquirer
     },
     {
       type: 'input',
-      name: 'textColour',
+      name: 'textColor',
       message: `Please enter text color keyword or a hexadecimal number.`,
     },
     {
       type: 'input',
-      name: 'logoColour',
+      name: 'logoColor',
       message: `Please enter a color keyword or a hexadecimal number for the logo's background.`,
     },
     {
@@ -33,9 +33,16 @@ inquirer
 
     const svgText = myshape.render()
 
-    //additional HTML text. See example svg files
-
+    const backgroundShape = logoMaker.processAnswers(answers);
+    writeLogo(backgroundShape);
     //fs.writefile with the svgText as the data
+    function writeLogo(backgroundShape) {
+      fs.writeFile('logo.svg', backgroundShape, (err) => {
+          if (err) {
+              console.error(" Something went wrong:", err);
+          } else {
+              console.log(" Generated logo.svg\n"); // The exact words "Generated logo.svg" are part of the requirements, so don't change them
+            }})}
 })      
 // const fs = require('fs');
 
