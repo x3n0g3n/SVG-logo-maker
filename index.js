@@ -43,22 +43,4 @@ inquirer
           } else {
               console.log(" Generated logo.svg\n"); // The exact words "Generated logo.svg" are part of the requirements, so don't change them
             }})}
-})      
-// const fs = require('fs');
-
-// function writeLogoToFile(logoData, filename) {
-//   // Convert the logoData to a string
-//   const logoString = JSON.stringify(logoData);
-
-//   // Write the logo string to a file
-//   fs.writeFile(filename, logoString, (err) => {
-//     if (err) {
-//       console.error('Error writing file:', err);
-//     } else {
-//       console.log('Logo data saved to file:', filename);
-//     }
-//   });
-// }
-
-// const filename = 'logo.json';
-// writeLogoToFile(logoData, filename);
+});
